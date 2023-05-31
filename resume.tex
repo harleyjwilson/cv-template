@@ -1,0 +1,170 @@
+% CV-Template template for a resume
+%
+% This template has been downloaded from:
+% https://github.com/harleyjwilson/CV-Template
+%
+% Authors:
+% Harley Wilson <hi@harleyjwilson.com>
+
+% Template license:
+% MIT License (https://mit-license.org/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% Document and package declaration
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.75cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[]{lipsum}
+\usepackage[]{ulem}
+\usepackage[dvipsnames]{xcolor}
+
+% General settings
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\setlength{\parindent}{0pt}
+
+% User defined styles
+\definecolor{accent}{RGB}{54, 68, 242}
+\renewcommand{\ULthickness}{1pt}
+\renewcommand{\familydefault}{phv}
+
+% Custom commands
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}{
+	C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}
+}
+
+% Split line into halves. Used in experience section.
+\newcommand\splitlinehalf[3][t]{%
+  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
+  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
+}
+
+% Split line into thirds. Used in experience section.
+\newcommand\splitlinethirds[4][t]{%
+  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
+  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
+  \parbox[#1]{\splitcolthree\textwidth}{\raggedleft#4}%
+}
+
+% User variables
+% Split line ratios
+\def \splitcolone {0.35}
+\def \splitcoltwo {0.35}
+\def \splitcolthree {0.3}
+
+% Experience and skills table column ratios
+\def \tablecolone {0.35}
+\def \tablecoltwo {0.55}
+
+% Begin document
+\begin{document}
+
+
+%-------------------------------------------------------------------------------
+% INTRO SECTION
+%-------------------------------------------------------------------------------
+
+\begin{center}
+	% Title section
+	{\LARGE \textbf{John Smith}}\vspace{0.2cm}
+			
+	% Job Title
+	{\large Software Engineer}\vspace{0.2cm}
+			
+	% Personal information
+	Sillicon Valley, San Francisco\ \ \textbullet \ \
+	\href{https://linkedin.com/in/johnsmith}{linkedin.com/in/johnsmith} \textbullet \ \
+	\href{mailto:hi@johnsmith.com}{hi@johnsmith.com}\ \ \textbullet \ \
+	\href{tel:+12345678910}{(+12) 345 678 910} \ \
+\end{center}
+
+\lipsum[1][1-9]
+
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Experience  \sout{\hfill}}} 
+
+% Job Section One
+\splitlinethirds{\textbf{Job Title}}{\textbf{Business}}{\textbf{20XX-Present}}\\
+\splitlinehalf{Department/Team}{City, State}
+\begin{itemize}
+	\item \lipsum[1][1-2]
+	\item \lipsum[1][2-3]
+	\item \lipsum[1][4-6]
+\end{itemize}
+
+% Job Section Two
+\splitlinethirds{\textbf{Job Title}}{\textbf{Business}}{\textbf{20XX-20XX}}\\
+\splitlinehalf{Department/Team}{City, State}
+\begin{itemize}
+	\item \lipsum[2][1-2]
+	\item \lipsum[2][2-3]
+	\item \lipsum[2][4-6]
+\end{itemize}
+
+% Job Section Three
+\splitlinethirds{\textbf{Job Title}}{\textbf{Business}}{\textbf{20XX-20XX}}\\
+\splitlinehalf{Department/Team}{City, State}
+\begin{itemize}
+	\item \lipsum[3][1-2]
+	\item \lipsum[3][2-3]
+	\item \lipsum[3][4-6]
+\end{itemize}
+
+
+%-------------------------------------------------------------------------------
+% LANGUAGE AND TECHNOLOGIES
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Technologies and Languages  \sout{\hfill}}} 
+
+\begin{tabular}{p{\tablecolone\linewidth} p{\tablecoltwo\linewidth}}
+	\textbf{Languages:}    & Java, Python, HTML, CSS, Javascript, MySQL, C, \CPP                                                                 \\
+	\textbf{Technologies:} & Git, GitHub, JUnit, Mockito, Gradle, TailwindCSS, SCSS                                                         \\
+	\textbf{Other:}        & Data structures and algorithms, design patterns, software testing, requirements engineering, operating systems \\
+\end{tabular}
+
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Skills  \sout{\hfill}}} 
+
+\begin{tabular}{p{\tablecolone\linewidth} p{\tablecoltwo\linewidth}}
+	\textbf{Professional:} & Time management, attention to detail, conflict resolution, strong written communication, strong verbal communication \\
+	\textbf{Technical:}    & Microsoft Word, Microsoft Excel, Microsoft Powerpoint, Salesforce                                                    \\
+\end{tabular}
+
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Education  \sout{\hfill}}} 
+
+\textbf{Bachelor of Computing}, Lorem University, Canada \hfill \textbf{Expected 20XX}\\
+\textbf{Diploma of Information Technology}, Lorem University, England \hfill \textbf{20XX}\\
+\textbf{Certificate IV in Information Technology (Programming)}, TAFE, Australia \hfill \textbf{20XX}\\
+
+
+%-------------------------------------------------------------------------------
+% REFEREES
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Referees  \sout{\hfill}}}
+References available on request
+
+
+\end{document}
+
+% Document end
