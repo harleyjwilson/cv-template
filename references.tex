@@ -1,0 +1,122 @@
+% CV-Template template for a reference list
+%
+% This template has been downloaded from:
+% https://github.com/harleyjwilson/CV-Template
+%
+% Authors:
+% Harley Wilson <hi@harleyjwilson.com>
+
+% Template license:
+% MIT License (https://mit-license.org/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% Document and package declaration
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.75cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[]{lipsum}
+\usepackage[]{multicol}
+\usepackage[]{ulem}
+\usepackage[dvipsnames]{xcolor}
+
+% General settings
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\setlength{\parindent}{0pt}
+
+% User defined styles
+\definecolor{accent}{RGB}{54, 68, 242}
+\renewcommand{\ULthickness}{1pt}
+\renewcommand{\familydefault}{phv}
+
+% Begin document
+\begin{document}
+
+
+%-------------------------------------------------------------------------------
+% INTRO SECTION
+%-------------------------------------------------------------------------------
+
+\begin{center}
+	% Title section
+	{\LARGE \textbf{John Smith}}\vspace{0.2cm}
+				
+	% Job Title
+	{\large Software Engineer}\vspace{0.2cm}
+				
+	% Personal information
+	Sillicon Valley, San Francisco\ \ \textbullet \ \
+	\href{https://linkedin.com/in/johnsmith}{linkedin.com/in/johnsmith} \textbullet \ \
+	\href{mailto:hi@johnsmith.com}{hi@johnsmith.com}\ \ \textbullet \ \
+	\href{tel:+12345678910}{(+12) 345 678 910} \ \
+\end{center}
+
+
+%-------------------------------------------------------------------------------
+% REFERENCES
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large References  \sout{\hfill}}}\vspace{0.5cm}
+
+\subsection*{Professional}\vspace{0.2cm}
+
+% Two column layout
+\begin{multicols}{2}
+	{\large Firstname Lastname}\\
+	Position\\
+	Location\\
+	\href{tel:+12345678910}{(+12) 345 678 910}\\
+	\href{mailto:hi@email.com}{hi@email.com}\\
+	\vspace{1.5cm}
+
+	{\large Firstname Lastname}\\
+	Position\\
+	Location\\
+	\href{tel:+12345678910}{(+12) 345 678 910}\\
+	\href{mailto:hi@email.com}{hi@email.com}\\
+	\vspace{1.5cm}
+
+	% Force column break
+	\columnbreak
+
+	{\large Firstname Lastname}\\
+	Position\\
+	Location\\
+	\href{tel:+12345678910}{(+12) 345 678 910}\\
+	\href{mailto:hi@email.com}{hi@email.com}\\
+	\vspace{1.5cm}
+\end{multicols}
+
+\subsection*{Personal}\vspace{0.2cm}
+
+% Single column layour
+{\large Firstname Lastname}\\
+Position\\
+Location\\
+\href{tel:+12345678910}{(+12) 345 678 910}\\
+\href{mailto:hi@email.com}{hi@email.com}\\
+\vspace{1.5cm}
+	
+{\large Firstname Lastname}\\
+Position\\
+Location\\
+\href{tel:+12345678910}{(+12) 345 678 910}\\
+\href{mailto:hi@email.com}{hi@email.com}\\
+\vspace{1.5cm}
+
+{\large Firstname Lastname}\\
+Position\\
+Location\\
+\href{tel:+12345678910}{(+12) 345 678 910}\\
+\href{mailto:hi@email.com}{hi@email.com}\\
+\vspace{1.5cm}
+
+
+\end{document}
+
+% Document end
