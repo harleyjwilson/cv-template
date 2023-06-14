@@ -1,4 +1,4 @@
-% CV-Template template for a cover letter
+% CV-Template template for a traditional cover letter
 %
 % This template has been downloaded from:
 % https://github.com/harleyjwilson/CV-Template
@@ -15,22 +15,16 @@
 %-------------------------------------------------------------------------------
 
 % Document class and package declaration
-% newlfm documentation: https://mirror.aarnet.edu.au/pub/CTAN/macros/latex/contrib/newlfm/newlfm.pdf
 \documentclass[12pt,busletter,addrfromright,orderfromdateto]{newlfm}
-% Uses hyperref for the email link (removing the styling)
 \usepackage[hidelinks]{hyperref}
-% Uses datetime2 for the formatting of the date field
 \usepackage[en-GB]{datetime2}
-% Uses lipsum to generate dummy text
 \usepackage{lipsum}
 
-% Remove ordinal (i.e. st, nd, rd) from dates
+% General settings
 \DTMlangsetup[en-GB]{ord=omit}
-
-% Set font
 \renewcommand{\familydefault}{phv}
 
-% Set up spacing and margins for document
+% User defined styles
 \newlfmP{Headlinewd=0pt,Footlinewd=0pt}
 \newlfmP{headermarginsize=36pt}
 \newlfmP{addrfromskipafter=30pt}
@@ -40,6 +34,7 @@
 \newlfmP{sigskipafter=50pt}
 \newlfmP{postsigskipbefore=0pt}
 \newlfmP{postsigskipafter=0pt}
+
 
 %-------------------------------------------------------------------------------
 % LETTER INFORMATION
@@ -68,15 +63,17 @@
 \greetto{To Whom It May Concern,}
 \closeline{Respectfully yours,}
 
+% Begin document
+\begin{document}
+
+
 %-------------------------------------------------------------------------------
 % LETTER CONTENT
 %-------------------------------------------------------------------------------
 
-\begin{document}
 \begin{newlfm}
-	
+
 	% Letter content starts here
-	
 	\lipsum[1]
 	
 	\lipsum[2]
@@ -91,7 +88,6 @@
 	\lipsum[3]
 	
 	Email me at \href{mailto:123@email.com}{123@email.com} or call me at \href{tel:+612345678910}{+612345678910}.
-	
 	% Letter content ends here. Signature block is inserted here.
 	
 	% Enclosure and CC list. Comment/delete if not required.
@@ -99,6 +95,8 @@
 	\cclist{Nathan Apple, Bob Frog}
 	
 \end{newlfm}
+
 \end{document}
+
 
 % End document
