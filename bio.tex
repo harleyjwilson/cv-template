@@ -1,4 +1,4 @@
-% CV-Template template for a resume
+% CV-Template template for a professional biography
 %
 % This template has been downloaded from:
 % https://github.com/harleyjwilson/CV-Template
@@ -18,7 +18,7 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[fixed]{fontawesome5}
 \usepackage[a4paper,margin=1.75cm]{geometry}
-\usepackage{graphicx}
+\usepackage[]{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[]{lipsum}
@@ -31,8 +31,6 @@
 \pagestyle{empty}
 \setlength{\intextsep}{0pt}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
-\setlength{\tabcolsep}{0em}
 \graphicspath{ {./} }
 
 % User defined styles
@@ -40,38 +38,9 @@
 \renewcommand{\ULthickness}{1pt}
 \renewcommand{\familydefault}{phv}
 
-% Custom commands
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}{
-	C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}
-}
-
-% Split line into halves. Used in experience section.
-\newcommand\splitlinehalf[3][t]{%
-  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
-  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
-}
-
-% Split line into thirds. Used in experience section.
-\newcommand\splitlinethirds[4][t]{%
-  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
-  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
-  \parbox[#1]{\splitcolthree\textwidth}{\raggedleft#4}%
-}
-
 % User variables
-% Split line ratios
-\def \splitcolone {0.35}
-\def \splitcoltwo {0.35}
-\def \splitcolthree {0.3}
-
-% Experience and skills table column ratios
-\def \tablecolone {0.35}
-\def \tablecoltwo {0.55}
-
 % Headshot width (in cm)
 \def \headshotwidth {5}
-
 % Headshot filename (without file extension)
 \def \headshotname {headshot}
 
@@ -102,7 +71,7 @@
 % BIOGRAPHY
 %-------------------------------------------------------------------------------
 
-\subsection*{\textcolor{accent}{\Large Professional Biography  \sout{\hfill}}}
+\subsection*{\textcolor{accent}{\Large Professional Biography  \sout{\hfill}}}\vspace{0.5cm}
 
 % Headshot section
 \begin{wrapfigure}{r}{0cm}
@@ -113,18 +82,11 @@
 \end{wrapfigure}
 
 % Biography text
-\lipsum[1]
+\lipsum[1]\\
 	
-\lipsum[2]
+\lipsum[2]\\
 
-Here is a list;
-\begin{itemize}
-	\item Item 1.
-	\item Item 2.
-	\item Item 3.
-\end{itemize}
-
-\lipsum[3]
+\lipsum[3]\\
 
 
 \end{document}
