@@ -71,7 +71,7 @@
 % BIOGRAPHY
 %-------------------------------------------------------------------------------
 
-\subsection*{\textcolor{accent}{\Large Professional Biography  \sout{\hfill}}}\vspace{0.5cm}
+\subsection*{\textcolor{accent}{\Large Professional Biography  \sout{\hfill}}}
 
 % Headshot section
 \begin{wrapfigure}{r}{0cm}
@@ -81,12 +81,15 @@
 	\end{tikzpicture}
 \end{wrapfigure}
 
-% Biography text
-\lipsum[1]\\
-	
-\lipsum[2]\\
+% Set paragraph length to have new line
+\setlength{\parskip}{\baselineskip}
 
-\lipsum[3]\\
+% Biography text
+\lipsum[1]
+	
+\lipsum[2]
+
+\lipsum[3]
 
 
 \end{document}
