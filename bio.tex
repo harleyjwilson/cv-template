@@ -1,0 +1,130 @@
+% CV-Template template for a resume
+%
+% This template has been downloaded from:
+% https://github.com/harleyjwilson/CV-Template
+%
+% Authors:
+% Harley Wilson <hi@harleyjwilson.com>
+
+% Template license:
+% MIT License (https://mit-license.org/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+% Document and package declaration
+\documentclass[10pt,a4paper]{article}
+\usepackage[fixed]{fontawesome5}
+\usepackage[a4paper,margin=1.75cm]{geometry}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[]{lipsum}
+\usepackage[]{tikz}
+\usepackage[]{ulem}
+\usepackage[]{wrapfig}
+\usepackage[]{xfp}
+
+% General settings
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\setlength{\parindent}{0pt}
+\graphicspath{ {./} }
+
+% User defined styles
+\definecolor{accent}{RGB}{54, 68, 242}
+\renewcommand{\ULthickness}{1pt}
+\renewcommand{\familydefault}{phv}
+
+% Custom commands
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}{
+	C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}
+}
+
+% Split line into halves. Used in experience section.
+\newcommand\splitlinehalf[3][t]{%
+  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
+  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
+}
+
+% Split line into thirds. Used in experience section.
+\newcommand\splitlinethirds[4][t]{%
+  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
+  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
+  \parbox[#1]{\splitcolthree\textwidth}{\raggedleft#4}%
+}
+
+% User variables
+% Split line ratios
+\def \splitcolone {0.35}
+\def \splitcoltwo {0.35}
+\def \splitcolthree {0.3}
+
+% Experience and skills table column ratios
+\def \tablecolone {0.35}
+\def \tablecoltwo {0.55}
+
+% Headshot width (in cm)
+\def \headshotwidth {5}
+
+% Headshot filename (without file extension)
+\def \headshotname {headshot}
+
+% Begin document
+\begin{document}
+
+
+%-------------------------------------------------------------------------------
+% INTRO SECTION
+%-------------------------------------------------------------------------------
+
+\begin{center}
+	% Title section
+	{\LARGE \textbf{John Smith}}\vspace{0.2cm}
+			
+	% Job Title
+	{\large Software Engineer}\vspace{0.2cm}
+			
+	% Personal information
+	\faHome Sillicon Valley, San Francisco \ \
+	\faLinkedin\href{https://linkedin.com/in/johnsmith}{linkedin.com/in/johnsmith} \ \
+	\faEnvelope\href{mailto:hi@johnsmith.com}{hi@johnsmith.com} \ \
+	\faMobile\href{tel:+12345678910}{(+12) 345 678 910} \ \
+\end{center}
+
+
+%-------------------------------------------------------------------------------
+% BIOGRAPHY
+%-------------------------------------------------------------------------------
+
+\subsection*{\textcolor{accent}{\Large Professional Biography  \sout{\hfill}}}\vspace{0.5cm}
+
+% Headshot section
+\begin{wrapfigure}{r}{0cm}
+	\begin{tikzpicture}
+		\clip (0,0) circle (\fpeval{\headshotwidth / 2}cm);
+		\node {\includegraphics[width=\headshotwidth cm]{\headshotname}};
+	\end{tikzpicture}
+\end{wrapfigure}
+
+% Biography text
+\lipsum[1]\\
+	
+\lipsum[2]\\
+
+Here is a list;
+\begin{itemize}
+	\item Item 1.
+	\item Item 2.
+	\item Item 3.
+\end{itemize}
+
+\lipsum[3]\\
+
+
+\end{document}
+
+% Document end
