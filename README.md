@@ -13,3 +13,6 @@ Once you have cloned the repository open up a terminal in the repository directo
 `pdflatex coverletter.tex`to compile the cover letter
 
 `pdflatex bio.tex`to compile the biography
+
+Alternatively, to compile the PDF files and clean up the temporary files run:
+`latexmk -pdf && latexmk -c`
