@@ -11,3 +11,5 @@ Once you have cloned the repository open up a terminal in the repository directo
 `pdflatex references.tex` to compile the reference list
 
 `pdflatex coverletter.tex`to compile the cover letter
+
+`pdflatex bio.tex`to compile the biography
