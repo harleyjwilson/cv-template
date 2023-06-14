@@ -28,41 +28,11 @@
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
 
 % User defined styles
 \definecolor{accent}{RGB}{54, 68, 242}
 \renewcommand{\ULthickness}{1pt}
 \renewcommand{\familydefault}{phv}
-
-% Custom commands
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}{
-	C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}
-}
-
-% Split line into halves. Used in experience section.
-\newcommand\splitlinehalf[3][t]{%
-  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
-  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
-}
-
-% Split line into thirds. Used in experience section.
-\newcommand\splitlinethirds[4][t]{%
-  \parbox[#1]{\splitcolone\textwidth}{\raggedright#2}%
-  \parbox[#1]{\splitcoltwo\textwidth}{\centering#3}%
-  \parbox[#1]{\splitcolthree\textwidth}{\raggedleft#4}%
-}
-
-% User variables
-% Split line ratios
-\def \splitcolone {0.35}
-\def \splitcoltwo {0.35}
-\def \splitcolthree {0.3}
-
-% Experience and skills table column ratios
-\def \tablecolone {0.35}
-\def \tablecoltwo {0.55}
 
 % Begin document
 \begin{document}
@@ -91,27 +61,27 @@
 % COVER LETTER
 %-------------------------------------------------------------------------------
 
-\subsection*{\textcolor{accent}{\Large Cover Letter  \sout{\hfill}}}
+\subsection*{\textcolor{accent}{\Large Cover Letter  \sout{\hfill}}}\vspace{0.5cm}
 
 % Cover letter content starts here
-To Whom It May Concern,
+To Whom It May Concern,\\
 
-\lipsum[1]
+\lipsum[1]\\
 	
-\lipsum[2]
+\lipsum[2]\\
 
 Here is a list;
 \begin{itemize}
 	\item Item 1.
 	\item Item 2.
-	\item Item 3.
+	\item Item 3.\\
 \end{itemize}
 
-\lipsum[3]
+\lipsum[3]\\
 
-Email me at \href{mailto:123@email.com}{123@email.com} or call me at \href{tel:+612345678910}{+612345678910}.
+Email me at \href{mailto:123@email.com}{123@email.com} or call me at \href{tel:+612345678910}{+612345678910}.\\
 
-Respectfully yours,
+Respectfully yours,\\
 
 \vspace{1cm}
 
